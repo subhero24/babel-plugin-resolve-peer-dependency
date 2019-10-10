@@ -1,0 +1,26 @@
+{
+	"name": "babel-plugin-resolve-peer-dependency",
+	"main": "dist/index.js",
+	"module": "dist/index.es.js",
+	"source": "src/index.js",
+	"author": "Bruno Van Damme",
+	"license": "MIT",
+	"version": "0.0.1",
+	"dependencies": {
+		"resolve-from": "^5.0.0"
+	},
+	"devDependencies": {
+		"@babel/core": "^7.1.2",
+		"@babel/preset-env": "^7.1.0",
+		"babel-eslint": "^8.2.2",
+		"eslint": "^4.19.1",
+		"esm": "^3.2.7",
+		"prettier": "^1.16.4",
+		"roller": "https://github.com/subhero24/roller.git#0.x.x"
+	},
+	"scripts": {
+		"build": "roller",
+		"develop": "roller --watch",
+		"prepare": "yarn run build"
+	}
+}
